@@ -49,3 +49,39 @@ int main()
 
 
 }
+
+#include<stdio.h>
+ #define TAM 5
+
+
+//att3
+ int main()
+{
+  int gru[TAM];
+  int pos;
+  int menor;
+  int y;
+
+printf("Escreva os numeros do vetor");
+
+  for(pos=0 ; pos < TAM ; pos++){
+      
+        scanf(" %i", &gru[pos]);
+      }
+    menor = gru[0];
+    
+    for(pos = 1; pos < TAM ; pos++){
+        if(menor > gru[pos]) {
+            menor = gru[pos];
+            y=pos;
+        }
+   }
+    printf("Menor: %i \n", menor);
+    printf("Posição: %i \n", y);
+
+        
+    
+  
+
+  return 0;
+} 
